@@ -1,0 +1,482 @@
+@font-face {
+    font-family: 'Bebas Neue Bold';
+    src: url('./fonts/bebas-neue-bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('./fonts/gotham-pro.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url('./fonts/gotham-pro-bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url('./fonts/gotham-pro-medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro Light';
+    src: url('./fonts/gotham-pro-light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+@media (max-width: 1500px) {
+   
+   
+     .phone-call-link {
+      order: 3; ???????????
+      
+    
+   }
+   
+   .container_main img{
+       right: 4%;   
+   }
+   
+   .KYLIE_JENNER_LIP_KIT {
+      margin-left: 10px;
+      
+   }
+   
+   
+   .KYLIE_JENNER_LIP_KIT_title {
+   font-size: 40px; 
+   margin-left: 3%;   
+ 
+}
+
+  .KYLIE_JENNER_LIP_KIT_text {
+    margin-left: 7%;
+   }
+ 
+   .order_button {
+       margin-left: 8%;
+   }
+   
+
+   .container_2 h1  {
+   margin-left: 20%;
+   
+}
+
+   .container_main_price{
+      right: 43%;
+   }
+
+   .lip_prise {
+      display: none;
+   }
+   
+   }
+*/
+ 
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+   body {
+      display: none;
+   }
+}
+
+
+body {
+  background-color: #f0ebe8;
+  width: 100%;
+}
+
+
+
+.container {
+   display: flex;
+   justify-content: space-around;
+}
+
+header {
+   display: flex;
+   width: 1100px;
+   padding: 0 30px;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.menu_1 {
+   margin: 0 14px;
+   font-size: 17px;
+   color: #333333;
+   text-decoration: none;
+   text-transform: uppercase;
+   border-bottom: 1px solid transparent;
+}
+
+.menu .menu_1.active,
+.menu .menu_1:hover{
+    color:  #d4416a;
+    border-color:#d4416a;
+    transition: 0.8s;
+}
+
+
+.phone-call {
+   display: flex;
+   flex-flow: column;
+   justify-content: space-between;
+   flex-wrap: wrap;
+  
+   
+    
+}
+
+
+.phone-call-link {
+   text-decoration: none;
+   color: #333333;
+   font-size: 15px;
+   font-family: "Gotham Pro Medium";
+   align-items: center;
+   display: flex;
+}
+
+.phone-call-link:hover {
+   color:  #d4416a;
+   transition: 0.5s;
+   
+}
+
+
+.phone-call-link span {
+    margin: 6px;
+    font-family: 'Gotham Pro Light';
+
+}
+
+
+.container_main{
+  background: linear-gradient(0deg, #dee1d3 0%, #d9dbce 100%);
+  min-height: 600px;
+  margin-top: 25px;
+  position: relative;
+  background-repeat: repeat;
+  overflow: hidden;
+   display: flex;
+   justify-content: space-around;
+}
+
+
+ .container_main::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 27px;
+    background-image: url(./images/bottom-wave.png);
+    background-position: center left;
+    background-repeat: repeat-x;
+    position: absolute;
+    left: 0;
+    top: -11px;
+   
+  }
+  .container_main::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 23px;
+    background-image: url(./images/top-wave.png);
+    background-position: center left;
+    background-repeat: repeat-x;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+   
+  }
+
+.container_main_wrapper {
+   width: 1300px;
+   display: flex;
+}
+
+.main-wrapper-left, .main-wrapper-right {
+   width: 50%;
+}
+
+
+
+
+
+
+.container_main img {
+   position: absolute;
+   display: flex;
+   top: 25px;
+   left: 56%;
+   height: 565px;
+
+}
+
+.container_main_price  {
+    position: absolute;
+    top: 120px;
+    right: 75%;
+    width: 400px;
+   
+   
+}
+
+
+.container_main_price img {
+   height: 400px;
+   left: 225%;
+   
+   
+   
+}
+
+
+
+
+.prise {
+   position: absolute;
+   background-image: url(./images/border.png), url(./images/background.png);
+    top: 92px;
+    left: 50%;
+    width: 131px;
+    height: 131px;
+    display: flex;
+    background-position: center center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+    transform: rotate(22deg);
+  
+    
+}
+
+.prise p {
+    display: block;
+    width: 60px;
+    height: 90px;
+    font-size: 27px;
+    line-height: 22px;
+    font-family: "Gotham Pro";
+    text-align: center;
+    color: #fff;
+    
+}
+
+.KYLIE_JENNER_LIP_KIT {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   width: 700px;
+   height: 550px;
+   left: 20px;
+   top: 20px;
+}
+
+.KYLIE_JENNER_LIP_KIT_title {
+   top: 15%;
+   left: 3%;
+   position: absolute;
+   text-align: center;
+   font-size: 47px;
+   line-height: 47px;
+   font-family: "Bebas Neue";
+   color: #333333;
+}
+
+.KYLIE_JENNER_LIP_KIT_title_2 {
+    font-family: "Bebas Neue";
+    color: #d65177;
+}
+
+.KYLIE_JENNER_LIP_KIT_text {
+   display: flex;
+   align-items: center;
+   width: 420px;
+   font-size: 17px;
+   font-family: "Gotham Pro Light";
+   line-height: 30px;
+   color: #333333;
+   margin: 170px 20px 0 100px;
+   
+}
+
+.order_button {
+    background-image: linear-gradient(0deg, #c9486c 0%, #bb3e61 100%);
+    border-bottom: 4px solid #ab3456;
+    width: 300px;
+    height: 60px;
+    border-radius: 7px;
+    font-family: "Gotham Pro Light";
+    text-align: center;;
+    color: #fff;
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 35px;
+    margin-left: 145px;
+   
+}
+
+
+.order_button:hover {
+    border-bottom: none;
+  
+}
+
+.order_button span {
+    color: #fff;
+    font-size: 17px;
+    line-height: 26px;
+    font-family: "Gotham Pro";
+    
+}
+
+.container_2 {
+   display: flex;
+   justify-content: space-around;
+   top: 50px;
+   width: 80%;
+   position: relative;
+   
+}
+
+
+
+
+.container_main_wrapper_2 {
+   width: 1300px;
+   display: flex;
+  
+}
+
+.container_main_wrapper_2_left{
+   width: 30%;
+  
+}
+
+.container_main_wrapper_2_right {
+     width: 70%;
+   
+   
+}
+
+
+.container_2 h1 {
+   display: flex;
+   margin-left: 20%;
+   font-family: "Gotham Pro";
+   color: #d4416a;
+   font-size: 38px;
+   flex-wrap: wrap;
+  
+  
+}
+
+
+
+
+
+.container_2 p {
+   display: flex;
+   font-size: 17px;
+   font-family: "Gotham Pro Light";
+   flex-wrap: wrap;
+   line-height: 40px;
+   color: #333333;
+   position: absolute;
+   max-width: 790px;
+   top: 140px;
+   left: 44%;
+  
+   
+  
+}
+
+
+.container_2 span {
+   font-weight: bold;
+   font-family: "Gotham Pro Light";
+   
+  
+   
+}
+
+.definition {
+   position: absolute;
+   top: 160px;
+   left: 515px;
+  
+}
+
+
+.circle_picture {
+    width: 350px; 
+    height: 350px;
+    overflow: hidden;
+    background: #d47e96;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.circle_picture img {
+    display: block;
+    width: 300px;
+    margin-left: 6%;
+   
+    
+}
+
+.order_button_2 {
+   background-image: linear-gradient(0deg, #c9486c 0%, #bb3e61 100%);
+    border-bottom: 4px solid #ab3456;
+    width: 300px;
+    height: 60px;
+    border-radius: 7px;
+    font-family: "Gotham Pro Light";
+    text-align: center;;
+    color: #fff;
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 410px;
+    margin-left: 350px;
+    flex-wrap: wrap;
+   
+}
+
+.order_button_2:hover {
+    border-bottom: none;
+  
+}
+
+.order_button_2 span {
+    color: #fff;
+    font-size: 17px;
+    line-height: 27px;
+    font-family: "Gotham Pro";
+   
+}
+
+.KYLIE_JENNER_product {
+   position: absolute;
+   display: flex;
+   top: 290px;
+   left: 95%;
+   flex-wrap: wrap;
+}
+
+
+
+
+
+
+   
